@@ -5,6 +5,7 @@ import (
 	"github.com/webbalaka/MassageShop_backend/controllers"
 )
 
-func MassageShopRouter(r *gin.Engine) {
-	r.GET("/api/massageShops", controllers.GetMassageShops)
+func AuthRouter(r *gin.Engine) {
+	r.POST("/api/v1/auth/register", controllers.Register)
+
 }

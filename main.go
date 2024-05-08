@@ -14,6 +14,6 @@ func init() {
 func main() {
 	r := gin.Default()
 	routes.MassageShopRouter(r)
+	routes.AuthRouter(r)
 	r.Run()
-
 }
