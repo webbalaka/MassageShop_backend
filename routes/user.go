@@ -9,6 +9,6 @@ import (
 func AuthRouter(r *gin.Engine) {
 	r.POST("/api/v1/auth/register", controllers.Register)
 	r.POST("/api/v1/auth/login", controllers.Login)
-	r.GET("/api/v1/auth/me",  middleware.Protect(), controllers.GetMe)
+	r.GET("/api/v1/auth/me", middleware.Protect(), controllers.GetMe)
 	r.GET("/api/v1/auth/logout", controllers.Logout)
 }

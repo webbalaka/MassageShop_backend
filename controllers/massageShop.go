@@ -66,7 +66,7 @@ func CreateMassageShop(c *gin.Context) {
 
 	c.JSON(200, gin.H{
 		"success": true,
-		"data":    input,
+		"data":    newMassageShop,
 	})
 }
 
@@ -103,7 +103,7 @@ func UpdateMassageShop(c *gin.Context) {
 
 	c.JSON(200, gin.H{
 		"success": true,
-		"data":    input,
+		"data":    massageShops,
 	})
 }
 
